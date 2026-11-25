@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f8ff">
+  <meta name="description" content="Tahap kedua media pembelajaran PAUD untuk mengenal suara sapi, lonceng, dan petir.">
+  <title>Tahap 2 - Ayo Tebak Suara! | Media Belajar PAUD</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="eyebrow">★ MEDIA PEMBELAJARAN PAUD ★</div>
+      <h1>Hebat! Kita Lanjut Lagi!</h1>
+      <p>Masih ingat cara bermainnya? Dengarkan suara, lalu tarik ke gambar yang benar!</p>
+      <div class="progress" aria-label="Tahapan permainan">
+        <span>1. Tebak suara</span><span class="active">2. Tebak suara lagi</span><span>3. Tirukan suara</span>
+      </div>
+    </header>
+    <div class="topline">
+      <div class="instruction"><span aria-hidden="true">👆</span> Dengarkan suara baru, lalu cocokkan dengan gambarnya.</div>
+      <div class="score" aria-live="polite"><span aria-hidden="true">⭐</span> Bintang: <strong id="score">0 / 3</strong></div>
+    </div>
+    <section class="section" aria-labelledby="sound-heading">
+      <h2 class="section-heading" id="sound-heading"><span class="number">1</span> Dengarkan suara</h2>
+      <div class="sound-tray" id="sound-tray"></div>
+    </section>
+    <section class="section targets-section" aria-labelledby="target-heading">
+      <h2 class="section-heading" id="target-heading"><span class="number">2</span> Cocokkan dengan gambar</h2>
+      <div class="target-grid" id="target-grid"></div>
+      <div class="feedback" id="feedback" role="status" aria-live="polite"><span class="face" id="feedback-face">💡</span><span id="feedback-text">Ayo mulai! Dengarkan suara, lalu tarik ke gambar yang cocok.</span></div>
+      <div class="complete" id="complete" aria-live="polite">
+        <div class="big">🏆 🌟 🎉</div><h2>Hebat! Tahap kedua selesai!</h2>
+        <p>Kamu berhasil mencocokkan suara sapi, lonceng, dan petir.</p>
+        <a class="action primary" id="next-btn" href="level3.html">Lanjut ke Tahap 3 →</a>
+      </div>
+      <div class="bottom-actions">
+        <a class="action secondary" href="index.html">← Kembali ke Tahap 1</a>
+        <button class="action secondary" type="button" id="instruction-btn">🔊 Dengarkan petunjuk</button>
+        <button class="action primary" type="button" id="reset-btn">↻ Ulangi permainan</button>
+      </div>
+    </section>
+    <footer class="footer">Audio sapi: Mudchute cow 1.ogg oleh Secretlondon (CC BY-SA 3.0). Audio lonceng: Old school bell 4.ogg oleh ezwa (domain publik). Audio petir: Thunder.ogg oleh Bidgee (CC BY 3.0). Detail sumber tersedia di <a href="README.txt">README</a>.</footer>
+  </main>
+  <script src="assets/data.js"></script>
+  <script>window.MATCH_STAGE = 2;</script>
+  <script src="assets/match.js"></script>
+</body>
+</html>

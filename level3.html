@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f8ff">
+  <meta name="description" content="Tahap ketiga media pembelajaran PAUD: anak mengamati gambar, mendengar contoh, lalu menirukan suara.">
+  <title>Tahap 3 - Ayo Tirukan Suaranya! | Media Belajar PAUD</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="eyebrow">★ MEDIA PEMBELAJARAN PAUD ★</div>
+      <h1>Ayo Tirukan Suaranya!</h1>
+      <p>Sekarang permainannya berbeda. Lihat gambarnya, dengarkan contoh suaranya, lalu tirukan bersama-sama!</p>
+      <div class="progress" aria-label="Tahapan permainan">
+        <span>1. Tebak suara</span><span>2. Tebak suara lagi</span><span class="active">3. Tirukan suara</span>
+      </div>
+    </header>
+    <div class="topline">
+      <div class="instruction"><span aria-hidden="true">🗣️</span> Lihat gambar → dengar contoh → tirukan suaranya.</div>
+      <div class="score" aria-live="polite"><span aria-hidden="true">⭐</span> Sudah dicoba: <strong id="score">0 / 6</strong></div>
+    </div>
+    <section class="section" aria-labelledby="imitate-heading">
+      <h2 class="section-heading" id="imitate-heading"><span class="number">1</span> Ayo tirukan suara berikut!</h2>
+      <div class="imitate-grid" id="imitate-grid"></div>
+      <div class="teacher-note"><strong>Petunjuk untuk guru:</strong> Minta anak melihat gambar, tekan tombol “Dengar contoh”, lalu menirukan suara. Setelah anak mencoba, tekan “Aku sudah menirukan”. Website tidak merekam atau menilai suara anak secara otomatis; penilaian dilakukan guru secara langsung.</div>
+      <div class="feedback" id="feedback" role="status" aria-live="polite"><span class="face" id="feedback-face">🗣️</span><span id="feedback-text">Ayo mulai menirukan suara dari gambar pertama!</span></div>
+      <div class="complete" id="complete" aria-live="polite">
+        <div class="big">🌟 🎉 🏆</div><h2>Hebat! Semua suara sudah ditirukan!</h2>
+        <p>Terima kasih sudah belajar dan bermain hari ini.</p>
+        <a class="action success" href="index.html">↻ Main dari awal</a>
+      </div>
+      <div class="bottom-actions">
+        <a class="action secondary" href="level2.html">← Kembali ke Tahap 2</a>
+        <button class="action primary" type="button" id="reset-btn">↻ Ulangi tahap ini</button>
+      </div>
+    </section>
+    <footer class="footer">Audio contoh: Ayam (domain publik), Hujan (domain publik), Kucing oleh Dan Crosby (CC BY-SA 3.0), Sapi oleh Secretlondon (CC BY-SA 3.0), Lonceng oleh ezwa (domain publik), dan Petir oleh Bidgee (CC BY 3.0). Kredit lengkap ada di <a href="README.txt">README</a>.</footer>
+  </main>
+  <script src="assets/data.js"></script>
+  <script src="assets/imitation.js"></script>
+</body>
+</html>
